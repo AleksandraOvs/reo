@@ -17,7 +17,13 @@ get_header(); ?>
        
 <section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
                             ?>>
-     <div class="page-header__inner "></div>
+     <div class="page-header__inner ">
+        <?php
+    if (has_post_thumbnail()) { // условие, если есть миниатюра
+         the_post_thumbnail('full'); // если параметры функции не указаны, то выводится миниатюра текущего поста, размер thumbnail
+     } 
+     ?>
+     </div>
    
     <div class="fixed-container programms">
         <?php get_template_part('templates/programms'); ?>
