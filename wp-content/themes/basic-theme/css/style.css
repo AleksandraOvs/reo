@@ -2208,20 +2208,22 @@ ul.footer__menu__messengers li:not(:last-child) {
 }
 
 .footer-center {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 50%;
+    width:50%;
+    margin: 0 auto;
+    text-align:center;
 }
 
-.footer-right.footer-contacts {
-    width: 20%;
-}
 
 .footer-center a.footer__logo.logo {
-        display: block;
-        width: 100px;
-        height: 100px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.footer-bloginfo h3 {
+    margin-top: 20px;
+    text-align: center;
 }
 
 a.footer__logo.logo img {
@@ -2233,46 +2235,10 @@ a.footer__logo.logo img {
 
 .footer-bloginfo h3 {
     position: relative;
-    text-align: left;
+    text-align: center;
     margin:0;
 }
 
-ul.footer__menu__messengers {
-    display: block;
-}
-
-li.frc__contacts__item a {
-    display: flex;
-    align-items: center;
-}
-
-li.frc__contacts__item a {
-    display: flex;
-    align-items: center;
-}
-/* 
-ul.footer__menu__messengers {
-    display: flex;
-    gap: 25px;
-    justify-content: flex-end;
-} */
-
-li.footer__menu__messengers__item a {
-    display: flex;
-    font-size: 14px;
-}
-
-li.footer__menu__messengers__item a img{
-    width:25px;
-    height: 25px;
-    object-fit: contain;
-    object-position: center;
-}
-
-li.footer__menu__messengers__item a p {
-    color: #fff;
-    margin-left: 15px;
-}
 
 .fancybox-content {
     background: rgb(255,255,255);
