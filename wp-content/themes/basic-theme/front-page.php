@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<?php get_template_part('templates/hero'); ?>
+<?php get_template_part('templates/hero2'); ?>
 <section class="section-content">
     <?php the_content() ?>
 
