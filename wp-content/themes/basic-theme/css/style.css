@@ -1583,6 +1583,11 @@ a.programms__more-button.button:hover{
     color: #fff;
     transition: all .3s ease-in-out;
 } */
+
+.fixed-container.programms{
+    background: #fff;
+    margin-top: -30px;
+}
 /*BOOKS*/
 
 .page-template.page-template-page-books {

@@ -17,9 +17,9 @@ get_header(); ?>
        
 <section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
                             ?>>
-     <div class="page-header__inner"></div>
+     <div class="page-header__inner "></div>
    
-    <div class="fixed-container">
+    <div class="fixed-container programms">
         <?php get_template_part('templates/programms'); ?>
     </div>
 
