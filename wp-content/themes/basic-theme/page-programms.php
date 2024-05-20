@@ -12,21 +12,22 @@
  */
 
 get_header(); ?>
-
 <div class="page-container">
 
        
-    <section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
-                                ?>>
-         <div class="page-header__inner">
+<section class="site-page" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
+                            ?>>
+     <div class="page-header__inner"></div>
+   
+    <div class="full-width-container">
         <?php get_template_part('templates/programms'); ?>
-        </div>
-        <div class="full-width-container">
-       <?php the_content() ?>
-        </div>
-    </section>
- 
+    </div>
+
+</section>
+
 </div>
+
+
 
 <?php
 get_footer();
