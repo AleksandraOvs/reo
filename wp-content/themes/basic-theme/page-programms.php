@@ -19,7 +19,7 @@ get_header(); ?>
                             ?>>
      <div class="page-header__inner"></div>
    
-    <div class="full-width-container">
+    <div class="fixed-container">
         <?php get_template_part('templates/programms'); ?>
     </div>
 
