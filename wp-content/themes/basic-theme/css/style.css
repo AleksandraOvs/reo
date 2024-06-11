@@ -1994,6 +1994,8 @@ background: linear-gradient(0deg, rgba(28,50,34,1) 0%, rgba(87,102,91,1) 100%);
 }
 
 .page-section__content .fixed-container {
+        box-shadow: 0 0 20px rgba(31, 31, 31, .2);
+    
     /* background: url(../images/paper2.svg) no-repeat;
     background-position: center bottom;
     background-size:cover;
