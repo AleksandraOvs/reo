@@ -2178,6 +2178,12 @@ ul.footer__menu__messengers li:not(:last-child) {
     margin-bottom: 15px;
 }
 
+a.footer__logo.logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
 .footer-center {
     width: 50%;
 }
@@ -2216,10 +2222,59 @@ ul.footer__menu__messengers li:not(:last-child) {
     background: var(--dark-green);
 }
 
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .footer-center {
     width:50%;
     margin: 0 auto;
     text-align:center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.footer__messengers.flex.align-center {
+    gap: 20px;
+}
+
+ul.footer__messengers .social__item a {
+    width: 40px;
+    height: 40px;
+    background: var(--dark-green);
+    border:1px solid var(--dark-green);
+    border-radius: 0;
+    padding:10px;
+    transition: all .5s linear;
+}
+
+ul.footer__messengers .social__item a:hover{
+    background: transparent;
+    border-color: #fff;
+    transition: all .5s linear;
+}
+
+ul.footer__messengers .social__item a:hover img{
+    transform: scale(1.02);
+    transition: all .5s linear;
+}
+
+ul.footer__messengers li {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+ul.footer__messengers li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 
@@ -2231,6 +2286,7 @@ ul.footer__menu__messengers li:not(:last-child) {
 }
 
 .footer-bloginfo h3 {
+    font-size: 16px;
     margin-top: 20px;
     text-align: center;
 }
@@ -2585,9 +2641,7 @@ body.programms-template-default.single.single-programms {
     /* main.main {
         padding-top: 50px;
     } */
-    li.social__item {
-        background: #313131;
-    }
+    
 /* 
     section.page-section {
         padding-top: 70px;

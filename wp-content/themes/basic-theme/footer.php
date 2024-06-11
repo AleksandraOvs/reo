@@ -48,7 +48,8 @@ echo do_shortcode("$shcode"); ?>
 
 <div class="fixed-container">
 
-<div class="footer-center">
+<div class="footer__inner">
+<div class="footer-left">
 <a href="<?php site_url(); ?>" class="footer__logo logo">
   			<?php
   				$footer_logo = get_theme_mod('footer_logo');
@@ -64,6 +65,55 @@ echo do_shortcode("$shcode"); ?>
 							<p><?php echo get_bloginfo('description') ?></p>
 						</div>
 </div>
+
+<div class="footer-right">
+<div class="footer_right__contacts">
+							
+							<?php
+							if ($messengers = carbon_get_theme_option('messengers')) {
+							?>
+								<ul class="footer__messengers">
+									<?php
+									foreach ($messengers as $messenger) {
+									?>
+										<li class="social__item">
+											<a href="<?php echo $messenger['crb_mes_link']; ?>" class="social__link">
+												<?php
+												$thumb_contact = wp_get_attachment_image_url($messenger['crb_mes_image'], 'full');
+												?>
+												<img class="social__img" width="25" height="25" src="<?php echo $thumb_contact; ?>" alt="<?php echo $messenger['crb_mes_name']; ?>">
+											</a>
+
+											<p class="social__item__name">
+												<?php
+											if ($messengers_name = $messenger['crb_mes_name']) {
+												?>
+											<?php echo $messengers_name ?>
+											<?php } ?>
+											
+											</p>
+
+
+										</li>
+									<?php
+									}
+									?>
+								</ul>
+							<?php
+							}
+							?>
+							<?php
+							if ($button_link = carbon_get_theme_option('crb_but_link')) {
+							?>
+								<a href="<?php echo carbon_get_theme_option('crb_but_link') ?>" data-fancybox class="button fill"><?php echo carbon_get_theme_option('crb_but_text') ?></a>
+							<?php
+							}
+							?>
+						</div>
+</div>
+</div>
+
+
 
 
 <div class="footer-menu">
