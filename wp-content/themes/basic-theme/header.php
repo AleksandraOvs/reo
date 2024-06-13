@@ -44,14 +44,7 @@
 
 					<div class="header__top__right">
 						<div class="header__top__right__contacts">
-							<?php
-							if (carbon_get_theme_option('crb_phone') && $phone_link = carbon_get_theme_option('crb_phone_link')) {
-							?>
-								<div class="header__top__right__phone">
-									<a class="header__top__right__phone__link" href="<?php echo $phone_link ?>"><?php echo carbon_get_theme_option('crb_phone'); ?></a>
-								</div>
-							<?php }
-							?>
+						
 							<?php
 							if ($messengers = carbon_get_theme_option('messengers')) {
 							?>

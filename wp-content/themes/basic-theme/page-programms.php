@@ -26,6 +26,7 @@ get_header(); ?>
      </div>
    
     <div class="fixed-container programms">
+        <?php the_content() ?>
         <?php get_template_part('templates/programms'); ?>
     </div>
 
