@@ -199,6 +199,11 @@ ul.header__menu__messengers {
     justify-content: flex-end;
 }
 
+.header__menu__messengers li.social__item .social__link {
+    width: 15px;
+    height: 15px;
+}
+
 li.htr__contacts__item a {
     display: flex;
     align-items: center;
