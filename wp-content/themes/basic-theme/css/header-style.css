@@ -232,10 +232,10 @@ ul.header__menu__messengers.flex.align-center li:hover {
 
 li.social__item {
     box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    transition: all .3s linear;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+
 }
 
 li.social__item a {
@@ -291,7 +291,17 @@ a.site-header__logo {
 
 
 ul.header__menu__messengers li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
     transform: none;
+    transition: transform .3s linear;
+}
+
+ul.header__menu__messengers li:hover{
+    background: var(--dark-green);
+    border-color: var(--dark-green);
     transition: transform .3s linear;
 }
 
