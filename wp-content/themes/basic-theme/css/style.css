@@ -1917,6 +1917,8 @@ ul.books-archive__wrapper li:nth-child(2n) {
 .entry-post__books__item__content a.button.fill {
     margin: 0;
     margin-top: 40px;
+    width:70%;
+    max-width: 350px;
     background: var(--green);
 }
 
@@ -1924,7 +1926,8 @@ ul.books-archive__wrapper li:nth-child(2n) {
     position:relative;
     margin-top:20px;
     padding-bottom:3px;
-    width:300px;
+    width:70%;
+    max-width: 350px;
     text-align:center;
     display:block;
 }
@@ -3197,6 +3200,10 @@ body.programms-template-default.single.single-programms {
     .entry-post__books__item__content a.button.fill{
         margin: 40px auto 0;
     }
+
+    .button__book-more {
+        margin: 20px auto 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -3479,6 +3486,17 @@ body.programms-template-default.single.single-programms {
 
     a.programms__more-button.button {
         max-width: 100%;
+    }
+
+    .entry-post__books__item .book-link {
+        width: 280px;
+        height: 340px;
+    }
+
+    .entry-post__books__item .book-link img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
