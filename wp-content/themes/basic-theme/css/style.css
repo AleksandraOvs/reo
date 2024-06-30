@@ -1590,9 +1590,9 @@ ul.blog__list li:before{
     object-position: center;
 }
 
-a.programms__more-button.button {
+/* a.programms__more-button.button {
     background: var(--dark-green);
-}
+} */
 
 .programms-thumb {
     position: relative;

@@ -27,7 +27,7 @@
                             </div>
 
                             <div class="programms__list__item__more">
-                                <a href="<?php the_permalink() ?>" class="programms__more-button button">Узнать подробнее</a>
+                                <a href="<?php the_permalink() ?>" class="programms__more-button button">Подробнее</a>
                             </div>
 
 
