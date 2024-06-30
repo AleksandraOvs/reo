@@ -1372,6 +1372,10 @@ body.page-template {
     padding: 3% 7%;
 } 
 
+.fixed-container.site-page__container h2 {
+    text-align: center;
+}
+
 .entry-post__inner__head__summary {
     position: absolute;
     bottom: 0;
