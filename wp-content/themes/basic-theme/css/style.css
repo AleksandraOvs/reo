@@ -1329,7 +1329,8 @@ transition: all .5s ease-in-out;
 }
 
 body.page-template,
-.archive.tag {
+.archive.tag,
+.single {
     background: rgb(28, 50, 34);
     background: linear-gradient(0deg, rgba(28, 50, 34, 1) 0%, rgba(87, 102, 91, 1) 100%);
 }
