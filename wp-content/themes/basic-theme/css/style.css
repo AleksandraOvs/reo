@@ -569,6 +569,7 @@ a.hero-button:hover{
     position: relative;
     color: #fff;
     text-align: center;
+    padding: 0 6%;
     /* padding: 40px 20px;
     border-radius: 5px;
     background: rgba(255,255,255, .5);
