@@ -15,11 +15,11 @@ get_header(); ?>
 
             <h2><?php the_title() ?></h2>
             <div class="blog-description">
-            Узнайте наши новости, информацию о мероприятиях и других активностях Клуба. Также в Блоге публикуются научно-познавательные статьи руководства Клуба. Они погрузятся в иной, манящий мир шаманизма.
+                Узнайте наши новости, информацию о мероприятиях и других активностях Клуба. Также в Блоге публикуются научно-познавательные статьи руководства Клуба. Они погрузятся в иной, манящий мир шаманизма.
             </div>
 
 
-<?php
+            <?php
             $args = array(
                 'category_name' => 'blog',
                 'publish' => true,
@@ -31,7 +31,7 @@ get_header(); ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <li class="blog__list__item">
                             <div class="blog__list__item__thumb">
-                            <?php the_post_thumbnail('medium', array('class' => 'destr-img'));?>
+                                <?php the_post_thumbnail('medium', array('class' => 'destr-img')); ?>
                             </div>
                             <div class="blog__list__item__content">
                                 <h3><?php the_title(); ?></h3>
@@ -43,6 +43,7 @@ get_header(); ?>
                                 <a href="<?php the_permalink() ?>" class="blog__more-button button">Читать далее</a>
                             </div>
 
+                            <?php get_template_part('templates/tags') ?>
 
                         </li>
                     <?php endwhile; ?>

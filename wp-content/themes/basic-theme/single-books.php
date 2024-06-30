@@ -6,7 +6,11 @@
         <?php
         if (has_post_thumbnail()) { // условие, если есть миниатюра
             the_post_thumbnail('full'); // если параметры функции не указаны, то выводится миниатюра текущего поста, размер thumbnail
-        } 
+        } else {
+            ?>
+            <img src="<?php echo get_stylesheet_directory_uri()?>/images/placeholder.jpg" alt="">
+            <?php
+        }
         ?>
         <div class="fixed-container">
             <!-- <ul class="breadcrumbs__list">
