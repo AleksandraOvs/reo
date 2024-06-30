@@ -314,7 +314,7 @@ main.main {
 
 .arrow-up.show:hover {
     background: transparent;
-    border: 1px solid rgba(1, 175, 52, 1);
+    border: 1px solid var(--light-green);
     transition: all .3s linear;
 }
 
@@ -328,7 +328,7 @@ main.main {
 }
 
 .arrow-up.show:hover svg path {
-    fill: rgba(1, 175, 52, 1);
+    fill: var(--light-green);
 }
 
 .destr-img div img, .destr-img {
