@@ -2619,7 +2619,8 @@ ul.breadcrumbs__list {
 
 .page-section__header .fixed-container h2 {
     font-size: 32px;
-    width: 70%;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .page-section__header .fixed-container h2 {
