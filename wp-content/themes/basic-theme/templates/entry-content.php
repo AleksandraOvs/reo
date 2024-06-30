@@ -11,6 +11,7 @@
               </a>
     <div class="entry-post__inner__head">
         <h3><?php the_title(); ?></h3>
+        <?php the_excerpt() ?>
         <a href="<?php echo the_permalink() ?>" class="button">Читать далее</a>
     </div>
 

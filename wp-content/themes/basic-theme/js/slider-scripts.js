@@ -58,9 +58,9 @@ const swiper = new Swiper('.hero-slider', {
 const books_swiper = new Swiper('.books-slider', {
   //effect: "coverflow",
   grabCursor: true,
-  //spaceBetween: 20,
-  centeredSlides: true,
-  slidesPerView: 1.5,
+  spaceBetween: 30,
+  //centeredSlides: true,
+  slidesPerView: 1,
   loop: true,
   // autoplay: {
   //   delay: 5000,
@@ -83,23 +83,22 @@ const books_swiper = new Swiper('.books-slider', {
   },
   breakpoints: {
     
-    480:{
-      slidesPerView: 1.5,
-      centeredSlides: true,
-      loop: true
-    },
+    // 480:{
+    //   slidesPerView: 1.5,
+    //   centeredSlides: true,
+    //   loop: true
+    // },
 
-    768:{
-      slidesPerView: 2.5,
-        centeredSlides: true,
-        loop: true
-    },
+    // 768:{
+    //   slidesPerView: 2,
+    //     centeredSlides: true,
+    //     loop: true
+    // },
     
     992: {
-        slidesPerView: 1.3,
+        slidesPerView: 2,
         centeredSlides: true,
         loop: true
-        //slideToClickedSlide: true,
     },
 
     1200:{
@@ -112,7 +111,7 @@ const books_swiper = new Swiper('.books-slider', {
   const posts_swiper = new Swiper('.posts-slider', {
     //effect: "coverflow",
     grabCursor: true,
-    spaceBetween: 50,
+    spaceBetween: 30,
     //centeredSlides: true,
     slidesPerView: 1,
     //loop: true,

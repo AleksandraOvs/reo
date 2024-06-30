@@ -15,52 +15,53 @@ get_header(); ?>
 
 <div class="page-container">
 
-       
-    <section class="site-page" style="padding-top:140px;" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
-                                ?>>
-         <!-- <div class="page-header__inner">
+
+  <section class="site-page" style="padding-top:140px;" <?php //if (is_active_sidebar('page-sidebar1')) : echo 'style="width:73%;"'; endif;
+                                                        ?>>
+    <!-- <div class="page-header__inner">
             <div class="fixed-container">
-                <h2 class="site-page__title toopacity white"> <?php //the_title(); ?> </h2>
+                <h2 class="site-page__title toopacity white"> <?php //the_title(); 
+                                                              ?> </h2>
             </div>
         </div> -->
-        <div class="fixed-container">
-        <?php if (is_search() ): ?>
-                
-                    <h1>Результаты поиска по запросу: &laquo;<?php the_search_query()?>&raquo;</h1>
-              
-            <?php endif; ?>
+    <div class="fixed-container site-page__container">
+      <?php if (is_search()) : ?>
 
-            <?php if(have_posts()) : ?>
-              <div class="posts__grid">
-                <?php 
-              while(have_posts() ) : the_post();
+        <h1>Результаты поиска по запросу: &laquo;<?php the_search_query() ?>&raquo;</h1>
 
-                    get_template_part('templates/entry-content');
+      <?php endif; ?>
 
-            endwhile;
-            ?>
-              </div>
-              
-             
-                <div class="pagination">
-                  <?php
-                      echo paginate_links(array(
-                          'prev_next' => true,
-                          'prev_text' => __('<i class="icon arrow_carrot-left"></i>>'),
-                          'next_text' => __('<i class="icon arrow_carrot-right"></i>>'),
-                      ));
-                  ?>
+      <?php if (have_posts()) : ?>
+        <div class="posts__grid">
+          <?php
+          while (have_posts()) : the_post();
 
-                </div>
-              
-                    <?php else: ?>
-                        <p>По вашему запросу ничего не найдено</p>
-                      <?php endif; ?>
+            get_template_part('templates/entry-content');
+
+          endwhile;
+          ?>
         </div>
 
 
-    </section>
- 
+        <div class="pagination">
+          <?php
+          echo paginate_links(array(
+            'prev_next' => true,
+            'prev_text' => __('<i class="icon arrow_carrot-left"></i>>'),
+            'next_text' => __('<i class="icon arrow_carrot-right"></i>>'),
+          ));
+          ?>
+
+        </div>
+
+      <?php else : ?>
+        <p>По вашему запросу ничего не найдено</p>
+      <?php endif; ?>
+    </div>
+
+
+  </section>
+
 </div>
 
 
