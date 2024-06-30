@@ -3401,6 +3401,11 @@ body.programms-template-default.single.single-programms {
     ul.posts__list li:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    .page-section__header {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 480px) {
