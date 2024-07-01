@@ -2140,15 +2140,11 @@ background: linear-gradient(0deg, rgba(28,50,34,1) 0%, rgba(87,102,91,1) 100%);
     padding-bottom: 7%;
 }
 
-.page-section__content .fixed-container {
-    box-shadow: 0 0 20px rgba(31, 31, 31, .2);
+/* .page-section__content .fixed-container {
+    box-shadow: 0 0 20px rgba(31, 31, 31, .2); 
 
-    /* background: url(../images/paper2.svg) no-repeat;
-    background-position: center bottom;
-    background-size:cover;
-    transform: translateY(-20px);
-    padding: 20px; */
-}
+}*/
+
 
 /* .entry-post__books__heading {
     width: 250px;
