@@ -125,9 +125,9 @@
 			</div>
 
 			<?php if (is_active_sidebar('footer-sidebar1')) { ?>
-				<div class="footer-sidebar1">
+				<div class="footer-right">
 					<ul id="sidebar">
-						<?php dynamic_sidebar('left-sidebar'); ?>
+						<?php dynamic_sidebar('footer-sidebar1'); ?>
 					</ul>
 				</div>
 			<?php } ?>
