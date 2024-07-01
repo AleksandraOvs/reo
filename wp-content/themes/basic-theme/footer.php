@@ -111,7 +111,7 @@
 					}
 					?>
 				</div>
-<?php
+				<?php
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-footer',
@@ -121,12 +121,20 @@
 					)
 				);
 				?>
-			
 
 			</div>
 
-			
-				
+			<?php if (is_active_sidebar('footer-sidebar1')) { ?>
+				<div class="footer-sidebar1">
+					<ul id="sidebar">
+						<?php dynamic_sidebar('left-sidebar'); ?>
+					</ul>
+				</div>
+			<?php } ?>
+
+
+
+
 		</div>
 
 
