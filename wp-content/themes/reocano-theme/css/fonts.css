@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Cakra";
+    font-weight:400;
+    src:
+    /* local("Cakra"),  */
+    url(../fonts/Cakra.ttf) format("truetype"),
+    url(../fonts/Cakra.otf) format("opentype"),
+    url(../fonts/Cakra.woff2) format("woff2"),
+    url(../fonts/Cakra.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight:400;
+   /* src: local("CormorantGaramond"),  */
+    src: local("Montserrat"), 
+    url(../fonts/montserrat-regular.ttf) format("truetype"), 
+    url(../fonts/montserrat-regular.woff) format("woff"), 
+    url(../fonts/montserrat-regular.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight:600;
+   /* src: local("CormorantGaramond"),  */
+    src: local("Montserrat"), 
+    url(../fonts/montserrat-medium.ttf) format("truetype"), 
+    url(../fonts/montserrat-medium.woff) format("woff"), 
+    url(../fonts/montserrat-medium.woff2) format("woff2");
+    font-display: swap;
+}
