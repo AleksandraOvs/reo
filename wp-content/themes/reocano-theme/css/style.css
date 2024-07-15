@@ -2263,7 +2263,7 @@ background: linear-gradient(0deg, rgba(28,50,34,1) 0%, rgba(87,102,91,1) 100%);
 /*POSTS PAGE*/
 .page-header__inner{
     position: relative;
-    z-index: 4;
+    z-index: -1;
 }
 
 .page-header__inner:after {
