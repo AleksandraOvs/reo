@@ -38,7 +38,12 @@
 	echo do_shortcode("$shcode"); ?>
 </div>
 
+
+
+
 </main>
+
+
 
 <footer id="footer" class="footer">
 
@@ -62,72 +67,9 @@
 				</div>
 			</div>
 
-			<div class="footer-center">
-				<div class="footer_center__contacts">
-
-					<?php
-					if ($messengers = carbon_get_theme_option('messengers')) {
-					?>
-						<ul class="footer__messengers">
-							<?php
-							foreach ($messengers as $messenger) {
-							?>
-								<li class="social__item">
-									<a href="<?php echo $messenger['crb_mes_link']; ?>" class="social__link">
-										<?php
-										$thumb_contact = wp_get_attachment_image_url($messenger['crb_mes_image'], 'full');
-										?>
-										<img class="social__img" width="25" height="25" src="<?php echo $thumb_contact; ?>" alt="<?php echo $messenger['crb_mes_name']; ?>">
-									</a>
-
-									<p class="social__item__name">
-										<?php
-										if ($messengers_name = $messenger['crb_mes_name']) {
-										?>
-											<?php echo $messengers_name ?>
-										<?php } ?>
-
-									</p>
-
-
-								</li>
-							<?php
-							}
-							?>
-						</ul>
-					<?php
-					}
-					?>
-					<?php
-					if ($button_link = carbon_get_theme_option('crb_but_link')) {
-					?>
-						<a href="<?php echo carbon_get_theme_option('crb_but_link') ?>" data-fancybox class="button fill"><?php echo carbon_get_theme_option('crb_but_text') ?></a>
-					<?php
-					}
-					?>
-				</div>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-footer',
-						'container' => 'nav',
-						'menu_class' => 'footer__menu',
-						'title'	=> true
-					)
-				);
-				?>
-
-			</div>
-
-			<?php if (is_active_sidebar('footer-sidebar1')) { ?>
-				<div class="footer-right">
-					<ul id="sidebar">
-						<?php dynamic_sidebar('footer-sidebar1'); ?>
-					</ul>
-				</div>
-			<?php } ?>
-
 		</div>
+
+
 
 		<div class="arrow-up">
 			<svg width="23" height="37" viewBox="0 0 23 37" fill="none" xmlns="http://www.w3.org/2000/svg">
