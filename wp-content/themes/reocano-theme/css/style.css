@@ -2348,9 +2348,9 @@ ul.footer__messengers li.social__item:hover {
     border-color: #fff;
 }
 
-.footer-center {
+/* .footer-center {
     width: 50%;
-}
+} */
 
 .footer__menu li a {
     font-size: 14px;
@@ -2393,7 +2393,6 @@ ul.footer__messengers li.social__item:hover {
 }
 
 .footer-center {
-    width:50%;
     margin: 0 auto;
     text-align:center;
 }

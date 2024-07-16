@@ -15,7 +15,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="show-temp"><?php echo get_current_template(); ?> </div>
 
     <?php wp_body_open(); ?>
     <div class="site-container">

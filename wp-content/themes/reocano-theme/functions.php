@@ -20,14 +20,14 @@ add_filter( 'template_include', 'var_template_include', 1000 );
 	  return $t;
   }
   
-  function get_current_template( $echo = false ) {
-	  if( !isset( $GLOBALS['current_theme_template'] ) )
-		  return false;
-	  if( $echo )
-		  echo $GLOBALS['current_theme_template'];
-	  else
-		  return $GLOBALS['current_theme_template'];
-  }
+//   function get_current_template( $echo = false ) {
+// 	  if( !isset( $GLOBALS['current_theme_template'] ) )
+// 		  return false;
+// 	  if( $echo )
+// 		  echo $GLOBALS['current_theme_template'];
+// 	  else
+// 		  return $GLOBALS['current_theme_template'];
+//   }
  
   if ( ! function_exists( 'basic_setup' ) ) :
 
