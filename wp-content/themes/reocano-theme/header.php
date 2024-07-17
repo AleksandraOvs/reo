@@ -33,7 +33,7 @@
                         </a>
 
                         <div class="header__top__left__content">
-                            <h1><?php echo get_bloginfo('name') ?></h1>
+                            <h1><a href="<?php echo site_url() ?>"><?php echo get_bloginfo('name') ?></a></h1>
                             <p><?php echo get_bloginfo('description') ?></p>
                         </div>
                     </div>
