@@ -1904,7 +1904,10 @@ ul.books-archive__wrapper li {
 
 .entry-post__books__item__content .button {
     margin: 0;
-    margin-top: 40px;
+    width: 70%;
+    margin-top: 20px;
+    background: var(--black);
+    color: #fff;
 }
 
 ul.books-archive__wrapper li:nth-child(2n) {
