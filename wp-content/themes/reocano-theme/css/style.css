@@ -1939,7 +1939,7 @@ a.button.button__book-more{
    transition:all .5s linear;
 }
 
-button.button__book-more:hover{
+a.button.button__book-more:hover{
     background-color: transparent;
     color: var(--black);
     transition:all .5s linear;
