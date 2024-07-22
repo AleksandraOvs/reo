@@ -1929,7 +1929,7 @@ ul.books-archive__wrapper li:nth-child(2n) {
     text-align:center;
     display:block;
 }
-button.button__book-more{
+a.button.button__book-more{
     margin: 0;
    width: 70%;
    margin-top: 20px;
