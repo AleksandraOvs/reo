@@ -1942,6 +1942,7 @@ a.button.button__book-more{
 a.button.button__book-more:hover{
     background-color: transparent;
     color: var(--black);
+    border-color: var(--black);
     transition:all .5s linear;
 }
 
