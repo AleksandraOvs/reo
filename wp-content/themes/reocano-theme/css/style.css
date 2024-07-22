@@ -3186,11 +3186,12 @@ body.programms-template-default.single.single-programms {
         text-align: center;
     }
 
-    .entry-post__books__item__content a.button.fill{
+    .entry-post__books__item__content a.button.fill,
+    a.button.button__book-more{
         margin: 40px auto 0;
     }
 
-    .button__book-more {
+    a.button.button__book-more {
         margin: 20px auto 0;
     }
 }
