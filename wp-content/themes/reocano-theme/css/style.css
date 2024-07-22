@@ -1904,10 +1904,23 @@ ul.books-archive__wrapper li {
 
 .entry-post__books__item__content .button {
     margin: 0;
-    width: 70%;
-    margin-top: 20px;
-    background: var(--black);
-    color: #fff;
+    margin-top: 40px;
+}
+
+button.button__book-more{
+    margin: 0;
+   width: 70%;
+   margin-top: 20px;
+   border:1px solid var(--black);
+   background: var(--black);
+   color: #fff;
+   transition:all .5s linear;
+}
+
+button.button__book-more:hover{
+    background-color: transparent;
+    color: var(--black);
+    transition:all .5s linear;
 }
 
 ul.books-archive__wrapper li:nth-child(2n) {
