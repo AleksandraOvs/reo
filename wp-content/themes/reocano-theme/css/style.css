@@ -3495,6 +3495,10 @@ body.programms-template-default.single.single-programms {
         margin-top: 40px;
         width: 100%;
     }
+
+    a.button.button__book-more{
+        margin-top:20px;
+    }
 }
 
 @media (max-width: 360px) {
