@@ -2503,7 +2503,7 @@ a.footer__logo.logo img {
 
 .fancybox-content {
     background: rgb(255,255,255);
-    filter: drop-shadow(0 0 10px rgba(22, 159, 219, 0.5));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 
@@ -2803,6 +2803,77 @@ body.programms-template-default.single.single-programms {
     width: 100%;
     overflow: hidden;
 }
+
+/*Photo Gallery*/
+.photo-gallery__content h3 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+ul.photo-gallery__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+li.photo-gallery__list__item a {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    transition: transform .5s ease-in-out;
+}
+
+li.photo-gallery__list__item a img {
+    width: 100%;
+    height: 100%;
+    transform: none;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+li.photo-gallery__list__item a:hover img {
+    transform: scale(1.02);
+    transition: transform .5s ease-in-out;
+}
+
+li.photo-gallery__list__item {
+    position: relative;
+    background: #fff;
+    border: 7px solid #fff;
+    border-radius: 3px;
+}
+
+.photo-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .75);
+    width: 100%;
+    padding: 7px;
+    height: 50px;
+    backdrop-filter: blur(20px);
+}
+
+.photo-desc p{
+    font-size: 14px;
+    color: var(--black);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+
+.photo-gallery__content .section-item:not(:first-child) {
+    margin-top: 70px;
+}
+
+
+
 @media (max-width: 1440px) {
 
     .section-hero__img .fixed-container {
@@ -2866,6 +2937,12 @@ body.programms-template-default.single.single-programms {
     .hero-slider.swiper {
         width: 100%;
         padding: 0 5%;
+    }
+
+    ul.photo-gallery__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 
     footer#footer .fixed-container {
@@ -3286,6 +3363,10 @@ body.programms-template-default.single.single-programms {
         margin-top: 30px;
     }
 
+    li.photo-gallery__list__item a {
+        height: 210px;
+    }
+
     footer#footer .fixed-container {
         display: block;
     }
@@ -3498,6 +3579,15 @@ body.programms-template-default.single.single-programms {
 
     a.button.button__book-more{
         margin-top:20px;
+    }
+
+    ul.photo-gallery__list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    li.photo-gallery__list__item a {
+        height: 370px;
     }
 }
 
