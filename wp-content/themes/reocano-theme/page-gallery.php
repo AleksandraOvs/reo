@@ -46,18 +46,21 @@ get_header() ?>
                                 foreach ($section_photos as $section_photo) {
                                     $section_photo_full = wp_get_attachment_image_url($section_photo['crb_pg_image'], 'full');
                                     $section_photo_thumb = wp_get_attachment_image_url($section_photo['crb_pg_image'], 'medium');
-                                    $section_photo_caption = $section_photo['crb_pg_image_description'];
+                                    
                                     //echo $section_photo['crb_pg_image'];
                                 ?>
                                     <li class="photo-gallery__list__item">
                                         <a href="<?php echo $section_photo_full ?>" data-fancybox="gallery" data-caption="<?php echo $section_photo_caption ?>">
                                             <img class="destr-img" src="<?php echo $section_photo_thumb ?>" alt="">
                                         </a>
-                                        <div class="photo-desc">
-                                            <p><?php echo $section_photo_caption ?></p>
-                                        </div>
 
-
+                                        <?php
+                                            if ($section_photo_caption = $section_photo['crb_pg_image_description']){
+                                                echo '<div class="photo-desc">
+                                            <p>' . $section_photo_caption . '</p>
+                                        </div>';
+                                            }
+                                        ?>
                                     </li>
                                 <?php
                                 }
