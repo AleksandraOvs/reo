@@ -2812,15 +2812,19 @@ body.programms-template-default.single.single-programms {
 
 ul.photo-gallery__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
+}
+
+ul.photo-gallery__list li{
+    max-width: 300px;
 }
 
 li.photo-gallery__list__item a {
     display: block;
     overflow: hidden;
     width: 100%;
-    height: 350px;
+    height: 270px;
     transition: transform .5s ease-in-out;
 }
 
