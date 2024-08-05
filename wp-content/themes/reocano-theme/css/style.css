@@ -3611,6 +3611,11 @@ li.photo-gallery__list__item {
     .slider-content p {
         font-size: 20px;
     }
+
+    ul.photo-gallery__list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 
