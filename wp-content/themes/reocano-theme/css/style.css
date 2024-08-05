@@ -2805,6 +2805,23 @@ body.programms-template-default.single.single-programms {
 }
 
 /*Photo Gallery*/
+
+/* .site-page__content._photo-gallery .fixed-container {
+    display: flex;
+    gap: 40px;
+} */
+
+.site-page__content._photo-gallery .fixed-container {
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
+    gap: 3%;
+   
+}
+
+li.photo-gallery__sidebar__list__item a {
+    font-size: 16px;
+}
+
 .photo-gallery__content h3 {
     color: #fff;
     margin-bottom: 30px;
@@ -2812,8 +2829,27 @@ body.programms-template-default.single.single-programms {
 
 ul.photo-gallery__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
+}
+
+ul.photo-gallery__sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li.photo-gallery__sidebar__list__item a {
+    display: block;
+    text-align: center;
+    color: var(--light-green);
+}
+
+
+li.photo-gallery__sidebar__list__item {
+    padding: 5px;
+    border: 1px solid var(--light-green);
+    border-radius: 20px;
 }
 
 ul.photo-gallery__list li{
@@ -3822,6 +3858,11 @@ transition: all .3s ease-in-out;
 
     .elementor-element .swiper-container .elementor-swiper-button, .elementor-element .swiper-container~.elementor-swiper-button, .elementor-element .swiper .elementor-swiper-button, .elementor-element .swiper~.elementor-swiper-button, .elementor-lightbox .swiper-container .elementor-swiper-button, .elementor-lightbox .swiper-container~.elementor-swiper-button, .elementor-lightbox .swiper .elementor-swiper-button, .elementor-lightbox .swiper~.elementor-swiper-button {
         font-size: 50px !important;
+    }
+
+    .site-page__content._photo-gallery .fixed-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
