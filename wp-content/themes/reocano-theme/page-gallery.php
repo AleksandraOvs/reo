@@ -13,11 +13,12 @@ get_header() ?>
             <div class="fixed-container">
                 <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
             </div>
+
         </div>
 
         <div class="site-page__content _photo-gallery">
             <div class="fixed-container">
-                <div class="photo-gallery__sidebar">
+            <div class="photo-gallery__sidebar">
                     <?php
                     $section_names = carbon_get_post_meta(get_the_ID(), 'photo_sections');
                     ?>
@@ -36,7 +37,6 @@ get_header() ?>
                         ?>
                     </ul>
                 </div>
-
                 <div class="photo-gallery__content">
                     <?php
 
@@ -70,8 +70,7 @@ get_header() ?>
 
                                         <?php
                                         if ($section_photo_caption = $section_photo['crb_pg_image_description']) {
-                                            echo '<div class="photo-desc">
-                                            <p>' . $section_photo_caption . '</p>
+                                            echo '<div class="photo-desc">' . $section_photo_caption . '
                                         </div>';
                                         }
                                         ?>

@@ -2835,21 +2835,26 @@ ul.photo-gallery__list {
 
 ul.photo-gallery__sidebar__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
     gap: 10px;
 }
 
 li.photo-gallery__sidebar__list__item a {
     display: block;
+    font-size: 14px;
     text-align: center;
     color: var(--light-green);
 }
 
 
 li.photo-gallery__sidebar__list__item {
-    padding: 5px;
+    padding: 7px;
     border: 1px solid var(--light-green);
     border-radius: 20px;
+    width: max-content;
 }
 
 ul.photo-gallery__list li{

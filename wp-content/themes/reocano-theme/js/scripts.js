@@ -74,7 +74,7 @@ jQuery(document).ready(function($)  {
     }
 
     const upArrow = document.querySelector('.arrow-up');
-    const galleryId = document.querySelector('.photo-gallery__sidebar__list__item a');
+
       
     upArrow.addEventListener('click', (e) => {
        e.preventDefault();
@@ -82,11 +82,18 @@ jQuery(document).ready(function($)  {
       scrollTo(0, 800);
     }); 
 
-    galleryId.addEventListener('click', (e) => {
-      e.preventDefault();
-     // Вызываем функцию, первый аргумент - отступ, второй - скорость скролла, чем больше значение, тем медленнее скорость прокрутки
-     scrollTo(0, 800);
-   }); 
+    
+    // galleryId.forEach(el=>el.click()){
+    //   alert ('click');
+    // };
+
+
+  //   galleryId.addEventListener('click', (e) => {
+  //     alert('click');
+  //     e.preventDefault();
+  //    // Вызываем функцию, первый аргумент - отступ, второй - скорость скролла, чем больше значение, тем медленнее скорость прокрутки
+  //    scrollTo(0, 800);
+  //  }); 
     
     // Вверх и показ верхнего меню
     const arrowUp = () => {
