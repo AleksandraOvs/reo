@@ -2855,6 +2855,12 @@ li.photo-gallery__sidebar__list__item {
     border: 1px solid var(--light-green);
     border-radius: 20px;
     width: max-content;
+    transition: all .5s ease-in-out;
+}
+
+li.photo-gallery__list__item:hover{
+    transform:scale(1.02);
+    transition: all .5s ease-in-out;
 }
 
 /* ul.photo-gallery__list li{
