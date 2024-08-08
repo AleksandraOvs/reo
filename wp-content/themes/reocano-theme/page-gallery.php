@@ -29,7 +29,7 @@ get_header() ?>
                             $section_id = $section_name['crb_pg_section_id'];
                         ?>
                             <li class="photo-gallery__sidebar__list__item">
-                                <a href="#<?php echo $section_id ?>" href=""><?php echo $section_heading ?></a>
+                                <a class="gallery-id" href="#<?php echo $section_id ?>" href=""><?php echo $section_heading ?></a>
 
                             </li>
                         <?php

@@ -74,7 +74,7 @@ jQuery(document).ready(function($)  {
     }
 
     const upArrow = document.querySelector('.arrow-up');
-
+    
       
     upArrow.addEventListener('click', (e) => {
        e.preventDefault();
@@ -83,9 +83,27 @@ jQuery(document).ready(function($)  {
     }); 
 
     
-    // galleryId.forEach(el=>el.click()){
+    // galleryIds.forEach(el=>el.click()){
     //   alert ('click');
     // };
+
+  //   const galleryIds = document.querySelectorAll('.gallery-id');
+  //   galleryIds.forEach(function (el) {
+  //     el.addEventListener("click", function () {
+  //       //alert('CLICKED');
+  //       el.preventDefault();
+  //       scrollTo(0, 800);
+  //   });
+  // });
+
+// const galleryIds = document.querySelectorAll('.gallery-id');
+//   for(var i=0; i < galleryIds.length; i++){
+//     galleryIds[i].addEventListener("click", function (e) {
+//       e.preventDefault();
+//       scrollTo(0, 800);
+        
+//     });
+// };
 
 
   //   galleryId.addEventListener('click', (e) => {

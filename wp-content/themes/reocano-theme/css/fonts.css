@@ -31,3 +31,36 @@
     url(../fonts/montserrat-medium.woff2) format("woff2");
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Neris";
+    font-weight:300;
+   /* src: local("CormorantGaramond"),  */
+    src: local("Neris"), 
+    url(../fonts/Neris-Light.ttf) format("truetype"), 
+    url(../fonts/neris-light.woff) format("woff"), 
+    url(../fonts/neris-light.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neris";
+    font-weight:600;
+   /* src: local("CormorantGaramond"),  */
+    src: local("Neris"), 
+    url(../fonts/Neris-SemiBold.ttf) format("truetype"), 
+    url(../fonts/neris-semibold.woff) format("woff"), 
+    url(../fonts/neris-semibold.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neris";
+    font-weight:800;
+   /* src: local("CormorantGaramond"),  */
+    src: local("Neris"), 
+    url(../fonts/Neris-Black.ttf) format("truetype"), 
+    url(../fonts/neris-black.woff) format("woff"), 
+    url(../fonts/neris-black.woff2) format("woff2");
+    font-display: swap;
+}
