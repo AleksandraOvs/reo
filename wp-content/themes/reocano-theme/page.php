@@ -24,12 +24,7 @@ get_header(); ?>
             //     the_post_thumbnail('full'); // если параметры функции не указаны, то выводится миниатюра текущего поста, размер thumbnail
             // } 
             ?>
-            <div class="fixed-container">
-                <?php if (!is_page('about-us')) {
-                    echo '<h2 class="site-page__title toopacity white">' . the_title() . '</h2>';
-                }
-                ?>
-            </div>
+            
         </div>
         <div class="full-width-container">
             <?php the_content() ?>
