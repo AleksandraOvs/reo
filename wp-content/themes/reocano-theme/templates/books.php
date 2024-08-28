@@ -44,7 +44,7 @@ if (have_posts()) : ?>
                         </div>    -->
                         <h3><?php the_title(); ?></h3>
 
-                        <a class="button">Купить</a>
+                        <!-- <a class="button">Купить</a> -->
                     </div>
 
 

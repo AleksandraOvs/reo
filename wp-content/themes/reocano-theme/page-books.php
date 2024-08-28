@@ -49,7 +49,7 @@ get_header(); ?>
                                 <div class="entry-post__books__item__content">
                                     <h3><?php the_title(); ?></h3>
                                     <div class="entry-post__excerpt"><?php the_excerpt() ?></div>
-                                    <a data-fancybox data-src="#popup-buybook" href="javascript:;" class="button fill">Купить</a>
+                                    <!-- <a data-fancybox data-src="#popup-buybook" href="javascript:;" class="button fill">Купить</a> -->
                                     <a class="button__book-more" href="<?php the_permalink() ?>/#feedback">Подробнее</a>
                                 </div>
 
