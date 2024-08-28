@@ -3430,6 +3430,14 @@ li.photo-gallery__list__item {
         height: 50px;
     }
 
+    ul.footer__messengers li.social__item {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
     .footer__menu {
         flex-direction: column;
         gap: 20px;
