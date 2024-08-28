@@ -12,24 +12,27 @@
 
     <div class="fixed-container">
 
-
+    <div class="section-hero__img__title tobottom">
         <?php
         if ($h1 = carbon_get_theme_option('crb_hero-head')) {
-            echo '<div class="section-hero__img__title tobottom"><h1>' . $h1 . '</h1></div>';
+            echo '<h1>' . $h1 . '</h1>';
         }
         ?>
 
-
-        <div class="section-hero__img__left-content toopacity">
-
-
-            <?php
+ <?php
             if ($hero_desc = carbon_get_theme_option('crb_hero-description')) {
                 echo '<p class="hero-description">' . $hero_desc . ' </p>';
             }
             ?>
+    </div>
 
-        </div>
+
+        <!-- <div class="section-hero__img__left-content toopacity">
+
+
+           
+
+        </div> -->
 
         <div class="section-hero__programms">
 

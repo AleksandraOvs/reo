@@ -53,6 +53,7 @@
 
 .section-hero2 .fixed-container {
     height: 100%;
+    padding-top:100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +113,7 @@
 
 .section-hero__programms {
     color: #fff;
+    margin-top: 100px;
 }
 
 /* ul.programms__list__onhero {
