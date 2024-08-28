@@ -34,17 +34,25 @@
         </div>
 
         <div class="section-hero__programms">
+
+
+
             <?php
+            // указываем категорию 9 и выключаем разбиение на страницы (пагинацию)
             $args = array(
                 'post_type' => 'programms',
                 'publish' => true,
                 //'paged' => get_query_var('paged'),
             );
-            query_posts($args);
-            if (have_posts()) : ?>
+            $query = new WP_Query($args);
+            if ($query->have_posts()) {
+            ?>
                 <h3>Сейчас доступна запись на наши авторские программы:</h3>
                 <ul class="programms__list__onhero">
-                    <?php while (have_posts()) : the_post(); ?>
+                    <?php
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                    ?>
                         <li class="programms__list__onhero__item">
                             <a href="<?php the_permalink() ?>" class="programms__list__item__thumb__link animateBlur">
                                 <?php the_post_thumbnail('medium', array('class' => 'destr-img')); ?>
@@ -53,30 +61,35 @@
                             </a>
 
                         </li>
-                    <?php endwhile; ?>
+                    <?php
+                    }
+                    wp_reset_postdata(); // сбрасываем переменную $post
+                    ?>
                 </ul>
-            <?php endif; ?>
-            <?php wp_reset_postdata(); ?>
+
+            <?php
+            }
+            ?>
+
         </div>
-        
-       
-
-        <?php
-        // if ($hero_desc = carbon_get_theme_option('crb_hero-description')) {
-        //     echo '<p class="hero-description">' . $hero_desc . ' </p>';
-        // }
-        ?>
 
 
-        <?php
-        //if ($button_link = carbon_get_theme_option('crb_button_link')) {
-        ?>
-        <!-- <a class="hero-button button" href="<?php //echo $button_link 
-                                                    ?>"><?php //echo carbon_get_theme_option('crb_hero_button') 
+            <?php
+            // if ($hero_desc = carbon_get_theme_option('crb_hero-description')) {
+            //     echo '<p class="hero-description">' . $hero_desc . ' </p>';
+            // }
+            ?>
+
+
+            <?php
+            //if ($button_link = carbon_get_theme_option('crb_button_link')) {
+            ?>
+            <!-- <a class="hero-button button" href="<?php //echo $button_link 
+                                                        ?>"><?php //echo carbon_get_theme_option('crb_hero_button') 
                                                         ?></a> -->
-        <?php
-        //}
-        ?>
+            <?php
+            //}
+            ?>
 
+        </div>
     </div>
-</div>
