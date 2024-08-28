@@ -297,7 +297,7 @@ main.main {
 
 .arrow-up.show {
     cursor: pointer;
-    z-index: 5;
+    z-index: 99;
     box-sizing: border-box;
     position: fixed;
     bottom: 10px;
