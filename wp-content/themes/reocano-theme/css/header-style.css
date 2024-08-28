@@ -18,7 +18,7 @@ header.header {
     background: transparent;
     width: 100%;
     font-size: 18px;
-    z-index: 15;
+    z-index: 99;
 }
 
 .header__top {
