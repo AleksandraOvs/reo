@@ -3484,6 +3484,10 @@ li.photo-gallery__list__item {
         padding-bottom: 10%;
     }
 
+    .arrow-up.show{
+        display: none;
+    }
+
     p.social__item__name {
         display: none;
     }
