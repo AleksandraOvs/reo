@@ -20,8 +20,6 @@
         ?>
 
 
-
-
         <div class="section-hero__img__left-content toopacity">
 
 
