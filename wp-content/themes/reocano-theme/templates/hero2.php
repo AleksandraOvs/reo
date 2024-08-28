@@ -56,7 +56,10 @@
                     <?php endwhile; ?>
                 </ul>
             <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
+        
+       
 
         <?php
         // if ($hero_desc = carbon_get_theme_option('crb_hero-description')) {
