@@ -21,7 +21,7 @@ get_header() ?>
                 
                 <div class="photo-gallery__content">
                     <?php
-
+                    $section_names = carbon_get_post_meta(get_the_ID(), 'photo_sections');
 
                     foreach ($section_names as $section_name) {
                         $section_heading = $section_name['crb_pg_section_name'];
