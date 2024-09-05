@@ -3154,6 +3154,7 @@ li.photo-gallery__photo a img{
     ul.photo-gallery__item__list li:nth-child(3n) {
         width: 100%;
     }
+
 }
 
 @media (max-width: 992px) {
@@ -3633,6 +3634,10 @@ li.photo-gallery__photo a img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+
+    ul.photo-gallery__item__list li:nth-child(5n+1) {
+        width: 100%;
     }
 }
 
