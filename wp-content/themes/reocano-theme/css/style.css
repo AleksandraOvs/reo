@@ -2964,10 +2964,6 @@ ul.photo-gallery__item__list li {
     border: 7px solid #fff;
 }
 
-ul.photo-gallery__item__list li:nth-child(5n+1) {
-    width: calc(67.5% - 20px);
-}
-
 li.photo-gallery__photo a {
     display: block;
     position: absolute;
@@ -3136,21 +3132,6 @@ li.photo-gallery__photo a img{
     a.books-slider__slide__link {
         width: 170px;
         height: 230px;
-    }
-
-    ul.photo-gallery__item__list li:nth-child(5n+1) {
-        width: calc(50% - 15px);
-    }
-
-    
-
-    ul.photo-gallery__item__list li {
-        position: relative;
-        width: calc(50% - 15px);
-    }
-    
-    ul.photo-gallery__item__list li:nth-child(3n) {
-        width: 100%;
     }
 
 }
@@ -3632,10 +3613,6 @@ li.photo-gallery__photo a img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-    }
-
-    ul.photo-gallery__item__list li:nth-child(5n+1) {
-        width: 100%;
     }
 }
 
