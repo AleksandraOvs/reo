@@ -2964,6 +2964,10 @@ ul.photo-gallery__item__list li {
     border: 7px solid #fff;
 }
 
+ul.photo-gallery__item__list li:nth-child(5n+1) {
+    width: calc(67.5% - 20px);
+}
+
 li.photo-gallery__photo a {
     display: block;
     position: absolute;
@@ -3134,9 +3138,21 @@ li.photo-gallery__photo a img{
         height: 230px;
     }
 
+    ul.photo-gallery__item__list li:nth-child(5n+1) {
+        width: calc(50% - 15px);
+    }
+
     ul.photo-gallery__item__list li {
         position: relative;
         width: calc(50% - 15px);
+    }
+
+    ul.photo-gallery__item__list li:nth-child(3n) {
+        width: 100%;
+    }
+
+    ul.photo-gallery__item__list li:nth-child(3n) {
+        width: 100%;
     }
 }
 
