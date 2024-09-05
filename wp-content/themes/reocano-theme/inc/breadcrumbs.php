@@ -29,15 +29,16 @@ function site_breadcrumbs()
         } elseif (is_page()) { // страницы WordPress 
 
             the_title();
-
         } elseif (is_category()) {
 
             single_cat_title();
+        } elseif (is_archive('books')) {
 
-        }elseif (is_archive('books')) {
+            echo 'Наши книги';
+        } elseif (is_archive('gallery')) {
 
-                echo 'Наши книги';
-        }elseif (is_tag()) {
+            echo 'Фотогалерея';
+        } elseif (is_tag()) {
 
             single_tag_title();
         } elseif (is_day()) { // архивы (по дням)
