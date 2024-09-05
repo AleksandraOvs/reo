@@ -2958,7 +2958,7 @@ ul.photo-gallery__item__list {
 
 ul.photo-gallery__item__list li {
     position: relative;
-    width: calc(33.33333% - 20px);
+    width: calc(33.33333% - 30px);
     height: 350px;
     background: #fff;
     border: 7px solid #fff;
