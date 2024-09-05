@@ -2951,14 +2951,11 @@ li.photo-gallery__list__item {
 }
 
 ul.photo-gallery__item__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+   
 }
 
 ul.photo-gallery__item__list li {
     position: relative;
-    width: calc(33.33333% - 30px);
     height: 350px;
     background: #fff;
     border: 7px solid #fff;
