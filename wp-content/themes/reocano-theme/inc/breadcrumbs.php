@@ -35,9 +35,6 @@ function site_breadcrumbs()
         } elseif (is_archive('books')) {
 
             echo 'Наши книги';
-        } elseif (is_archive('gallery')) {
-
-            echo 'Фотогалерея';
         } elseif (is_tag()) {
 
             single_tag_title();
