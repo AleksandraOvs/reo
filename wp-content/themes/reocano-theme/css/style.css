@@ -2951,7 +2951,14 @@ li.photo-gallery__list__item {
 }
 
 ul.photo-gallery__item__list {
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+ul.photo-gallery__item__list li:nth-child(5n) {
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 ul.photo-gallery__item__list li {
@@ -3129,6 +3136,23 @@ li.photo-gallery__photo a img{
     a.books-slider__slide__link {
         width: 170px;
         height: 230px;
+    }
+
+    ul.photo-gallery__item__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    ul.photo-gallery__item__list li:nth-child(5n) {
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    ul.photo-gallery__item__list li:nth-child(3n) {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
 }
