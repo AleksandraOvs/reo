@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Фотогалерея2
+ * Template name: Фотогалерея
  **/
 
 get_header() ?>
@@ -11,17 +11,34 @@ get_header() ?>
     <section class="site-page">
         <div class="page-header__inner">
             <div class="fixed-container">
-                <h2 class="site-page__title toopacity white"> <?php the_title(); ?> </h2>
+                <h2 class="site-page__title toopacity white"> Фотогалерея </h2>
             </div>
-
         </div>
 
         <div class="site-page__content _photo-gallery">
             <div class="fixed-container">
-                
-                <div class="photo-gallery__content">
+                <div class="photo-gallery__sidebar">
                     <?php
                     $section_names = carbon_get_post_meta(get_the_ID(), 'photo_sections');
+                    ?>
+                    <ul class="photo-gallery__sidebar__list">
+                        <?php
+                        foreach ($section_names as $section_name) {
+                            $section_heading = $section_name['crb_pg_section_name'];
+                            $section_id = $section_name['crb_pg_section_id'];
+                        ?>
+                            <li class="photo-gallery__sidebar__list__item">
+                                <a class="gallery-id" href="#<?php echo $section_id ?>" href=""><?php echo $section_heading ?></a>
+
+                            </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <div class="photo-gallery__content">
+                    <?php
+
 
                     foreach ($section_names as $section_name) {
                         $section_heading = $section_name['crb_pg_section_name'];

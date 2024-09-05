@@ -20,20 +20,16 @@ Container::make('post_meta', 'Цитата для книги')
     ));
 
 Container::make('post_meta', 'Добавить в фотогалерею')
-    ->show_on_template('page-gallery.php')
+    //->show_on_template('page-gallery.php', 'page-gallery2.php')
+    ->show_on_post_type('gallery')
     ->add_fields(array(
-        Field::make('complex', 'photo_sections', 'Фотографии для галереи')
-            ->add_fields(array(
-                Field::make('text', 'crb_pg_section_name', 'Название секции')
-                    ->set_width(50),
-                Field::make('text', 'crb_pg_section_id', 'Идентификатор секции (только латинскими буквами)')
-                    ->set_width(50),
+       
                 Field::make('complex', 'crb_pg_photos', 'Фото для этой секции')
                     ->add_fields(array(
                         Field::make('image', 'crb_pg_image', 'Фотография')
                             ->set_width(50),
                         Field::make('rich_text', 'crb_pg_image_description', 'Описание фотографии')
                             ->set_width(50)
-                    ))
+                   
             ))
     ));

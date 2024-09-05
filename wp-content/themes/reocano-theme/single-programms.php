@@ -20,6 +20,7 @@ Template Post Type: post
                             <?php the_post_thumbnail('medium', array('class' => 'destr-img'));?>
                             </div>
     </div>
+ 
 </div>
 
     <!-- <div class="page-header__inner">

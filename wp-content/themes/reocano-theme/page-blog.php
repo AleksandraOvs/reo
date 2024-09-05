@@ -14,6 +14,9 @@ get_header(); ?>
         <div class="fixed-container site-page__container">
 
             <h2><?php the_title() ?></h2>
+            <ul class="breadcrumbs__list _blog">
+                <?php echo site_breadcrumbs(); ?>
+            </ul>
             <div class="blog-description">
                 Узнайте наши новости, информацию о мероприятиях и других активностях Клуба. Также в Блоге публикуются научно-познавательные статьи руководства Клуба. Они погрузятся в иной, манящий мир шаманизма.
             </div>

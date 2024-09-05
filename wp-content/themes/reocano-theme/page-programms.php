@@ -24,6 +24,12 @@ get_header(); ?>
      } 
      ?>
      </div>
+
+<div class="fixed-container">
+<ul class="breadcrumbs__list">
+                <?php echo site_breadcrumbs(); ?>
+            </ul>
+</div>
    
     <div class="fixed-container programms">
         <?php the_content() ?>
