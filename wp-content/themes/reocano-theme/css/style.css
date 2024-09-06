@@ -1362,6 +1362,10 @@ body.page-template,
     text-align: center;
 }
 
+.programms-description {
+    margin-bottom: 70px;
+}
+
 /* .entry-post__inner__head h3 {
     text-align: center;
     font-weight: 300;
