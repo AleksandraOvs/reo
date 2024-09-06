@@ -1538,6 +1538,9 @@ body.page-template,
 /* ul.programms__list, .blog__list, .photo-gallery__list {
     margin-top: 70px;
 } */
+.blog-description {
+    margin: 40px 0 80px 0;
+}
 
 li.programms__list__item,
 li.blog__list__item{
