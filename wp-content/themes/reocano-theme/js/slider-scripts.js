@@ -139,8 +139,6 @@ const books_swiper = new Swiper('.books-slider', {
       
       1024:{
         slidesPerView: 3,
-        centeredSlides: true,
-        loop: true
       },
   
       // 768:{
