@@ -29,12 +29,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="full-width-container">
-            <div class="fixed-container">
-                <ul class="breadcrumbs__list">
-                    <?php echo site_breadcrumbs(); ?>
-                </ul>
-            </div>
-
+           
             <?php the_content() ?>
         </div>
     </section>

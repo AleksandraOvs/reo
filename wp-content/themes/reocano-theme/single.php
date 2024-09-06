@@ -16,9 +16,7 @@
                 </ul> -->
 
                 <h2 class="toright"><?php the_title(); ?></h2>
-                <ul class="breadcrumbs__list">
-                <?php echo site_breadcrumbs(); ?>
-            </ul>
+            
             </div>
         </div>
 

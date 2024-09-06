@@ -21,12 +21,6 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="fixed-container">
-        <ul class="breadcrumbs__list">
-                <?php echo site_breadcrumbs(); ?>
-            </ul>
-        </div>
-
         <div class="site-page__content">
             <div class="fixed-container">
 
