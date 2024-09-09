@@ -3908,12 +3908,12 @@ li.photo-gallery__photo a img{
     width: 100%;
     object-fit: cover;
     object-position: center;
-    -webkit-filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: gray;
+    filter: gray; */
 }
 
 .mainpage-gallery .elementor-element .elementor-widget-container .elementor-image-carousel-wrapper .elementor-image-carousel .swiper-slide.swiper-slide-next a figure img{
