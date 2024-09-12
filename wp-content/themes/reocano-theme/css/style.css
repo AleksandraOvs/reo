@@ -189,7 +189,7 @@ body.page-template-default.page {
 h2.site-page__title {
     position: relative;
     text-align: center;
-    font-size: 36px;
+    font-size: calc(1em + 3vw);
     font-weight: 400;
     /* color: var(--black); */
     line-height: 1;
@@ -3745,7 +3745,7 @@ li.photo-gallery__photo a img{
     }
 
     li.photo-gallery__list__item a {
-        height: 200px;
+        height: 350px;
     }
 
     ul.photo-gallery__item__list li {
