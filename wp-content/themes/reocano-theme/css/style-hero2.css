@@ -4,6 +4,7 @@
     position: relative;
     background: var(--dark-green);
     height: 100vh;
+    padding-bottom: 50px;
 }
 
 .section-hero2 .hero2-image{
@@ -136,11 +137,12 @@ ul.programms__list__onhero {
 
 a.programms__list__item__thumb__link {
     width: 100%;
-    background: rgba(255, 255, 255, .7);
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
 }
 
 li.programms__list__onhero__item a.programms__list__item__thumb__link img {
