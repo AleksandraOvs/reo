@@ -3,7 +3,7 @@
 .section-hero2 {
     position: relative;
     background: var(--dark-green);
-    height: 100vh;
+    height: auto;
     padding-bottom: 50px;
 }
 
